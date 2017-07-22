@@ -1,0 +1,15 @@
+/* Footer */
+
+.site-footer { 
+    background: #222222 !important;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    color: white;
+}
