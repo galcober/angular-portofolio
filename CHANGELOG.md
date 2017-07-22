@@ -9,4 +9,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New web front pages designed with Angular 4, Bootstrap 4 and FacesNG.
 - New admin fron pages to manage the web contents and several page information.
 
-[Unreleased]: https://github.com/galcober/angular_portofolio/compare/master...develop
+[Unreleased]: https://github.com/galcober/angular-portofolio/compare/master...develop
