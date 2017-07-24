@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { EditorModule } from 'primeng/primeng';
+import { ButtonModule } from 'primeng/primeng';
 
 @Component({
     selector: 'contactme',

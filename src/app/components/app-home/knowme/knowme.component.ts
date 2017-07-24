@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'knowme',
     templateUrl: './knowme.component.html',
     styleUrls: ['./knowme.component.css']
 })
-export class KnowMeComponent {}
+export class KnowMeComponent{
+
+}
