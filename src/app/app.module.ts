@@ -23,6 +23,7 @@ import { KnowMeComponent } from './components/app-home/knowme/knowme.component';
 import { StartComponent } from './components/app-home/start/start.component';
 import { FooterComponent } from './components/app-home/common/footer/footer.component';
 import { HeaderComponent } from './components/app-home/common/header/header.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { HeaderComponent } from './components/app-home/common/header/header.comp
     BlogComponent,
     ContactMeComponent,
     KnowMeComponent,
-    StartComponent
+    StartComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
