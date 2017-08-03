@@ -10,7 +10,9 @@ import {
   InputTextareaModule, ButtonModule, SharedModule, DataTableModule, DialogModule, CalendarModule, InputSwitchModule, EditorModule,
   DataListModule, TooltipModule, AutoCompleteModule, ProgressBarModule, RadioButtonModule, CheckboxModule, FileUploadModule, ToolbarModule, TabViewModule
 } from 'primeng/primeng';
-import {MdSidenavModule} from '@angular/material';
+import { MdSidenavModule} from '@angular/material';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
 import { AdminComponent } from './components/app-portal/admin/admin.component';
@@ -24,6 +26,11 @@ import { StartComponent } from './components/app-home/start/start.component';
 import { FooterComponent } from './components/app-home/common/footer/footer.component';
 import { HeaderComponent } from './components/app-home/common/header/header.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/','.json');
+}
 
 @NgModule({
   declarations: [
@@ -67,7 +74,15 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     RadioButtonModule,
     CheckboxModule,
     FileUploadModule,
-    TabViewModule
+    TabViewModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

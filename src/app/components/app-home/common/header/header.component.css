@@ -37,3 +37,9 @@
 .navbar-right {
   float: right !important;
 }
+
+.flag {
+    width: 2vw;
+    margin-right: 5px;
+    cursor: pointer;
+}
